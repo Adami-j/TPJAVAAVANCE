@@ -7,7 +7,14 @@ public class FizzBuzz {
      * @author Julien ADAMI
      */
     public static String fizzBuzz(int i) {
-        return String.valueOf(i);
+        String res="";
+        if(i==3){
+            res= "Fizz";
+        }else {
+            res= String.valueOf(i);
+        }
+
+        return res;
     }
 
 
