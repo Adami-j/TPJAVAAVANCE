@@ -31,7 +31,7 @@ public class TestFizzBuzz {
 
     @Test
     public void testFizzBuzz9(){
-        assertEquals("9",FizzBuzz.fizzBuzz(9));
+        assertEquals("Fizz",FizzBuzz.fizzBuzz(9));
     }
 
     @Test

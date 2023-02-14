@@ -9,12 +9,12 @@ public class FizzBuzz {
     public static String fizzBuzz(int i) {
 
         String res="";
-        if(i==3){
-            res= "Fizz";
-        }else if(5==i) {
+        if(i%3==0 && i%5==0){
+            res= "FizzBuzz";
+        }else if(i%3==0) {
+            res = "Fizz";
+        }else if(i%5==0){
             res = "Buzz";
-        }else if(i%3==0 && i%5==0){
-            res = "FizzBuzz";
         }else {
             res= String.valueOf(i);
         }
