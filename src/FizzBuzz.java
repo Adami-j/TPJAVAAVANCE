@@ -10,6 +10,10 @@ public class FizzBuzz {
         String res="";
         if(i==3){
             res= "Fizz";
+        }else if(5==i) {
+            res = "Buzz";
+        }else if(i%3==0 && i%5==0){
+            res = "FizzBuzz";
         }else {
             res= String.valueOf(i);
         }
