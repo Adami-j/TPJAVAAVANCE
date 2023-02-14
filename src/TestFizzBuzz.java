@@ -29,5 +29,17 @@ public class TestFizzBuzz {
         assertEquals("Buzz",FizzBuzz.fizzBuzz(5));
     }
 
+    @Test
+    public void testFizzBuzz9(){
+        assertEquals("9",FizzBuzz.fizzBuzz(9));
+    }
+
+    @Test
+    public void testFizzBuzzMultiple3et5(){
+        assertEquals("FizzBuzz",FizzBuzz.fizzBuzz(15));
+    }
+
+
+
 
 }

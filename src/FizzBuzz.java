@@ -7,6 +7,7 @@ public class FizzBuzz {
      * @author Julien ADAMI
      */
     public static String fizzBuzz(int i) {
+
         String res="";
         if(i==3){
             res= "Fizz";
