@@ -21,7 +21,12 @@ public class TestFizzBuzz {
 
     @Test
     public void testFizzBuzz3(){
-        assertEquals("Fizz",FizzBuzz.fizzBuzz(7));
+        assertEquals("Fizz",FizzBuzz.fizzBuzz(3));
+    }
+
+    @Test
+    public void testFizzBuzz5(){
+        assertEquals("Buzz",FizzBuzz.fizzBuzz(5));
     }
 
 
