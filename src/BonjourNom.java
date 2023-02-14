@@ -1,6 +1,6 @@
 public class BonjourNom {
 
-    public String bonjourNom(){
+    public static String bonjourNom(String nom){
         return null;
     }
 
