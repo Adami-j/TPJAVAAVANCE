@@ -8,4 +8,10 @@ public class TestNombreRomain {
     public void nombreRomain(){
         assertEquals("I", NombreRomain.splitNombreRomain(1));
     }
+
+    @Test
+    public void nombreRomainEgalZero(){
+        assertEquals("", NombreRomain.splitNombreRomain(0));
+    }
+
 }
