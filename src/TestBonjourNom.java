@@ -52,4 +52,22 @@ public class TestBonjourNom {
         assertEquals("Bonjour, Tic et Tac", BonjourNom.bonjourNom(listeDenoms));
     }
 
+    @Test
+    public void bonjourBeaucoupDeNoms(){
+        listeDenoms.add("Ma");
+        listeDenoms.add("MA");
+        listeDenoms.add("aM");
+        listeDenoms.add("Po");
+        assertEquals("Bonjour, Ma, MA, aM et Po", BonjourNom.bonjourNom(listeDenoms));
+    }
+
+    @Test
+    public void bonjourHazard(){
+        listeDenoms.add("MAM");
+        listeDenoms.add("AMA");
+        assertEquals("BONJOUR, MAM et AMA", BonjourNom.bonjourNom(listeDenoms));
+    }
+
+
+
 }
