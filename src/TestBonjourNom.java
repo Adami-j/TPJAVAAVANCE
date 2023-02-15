@@ -7,6 +7,13 @@ public class TestBonjourNom {
 
     @Test
     public void bonjourNomNom(){
-        assertEquals("Bonjour Ju",BonjourNom.bonjourNom("Ju"));
+        assertEquals("Bonjour, Ju",BonjourNom.bonjourNom("Ju"));
     }
+
+    @Test
+    public void bonjourNull(){
+        assertEquals("Bonjour, ami",BonjourNom.bonjourNom(null));
+    }
+
+
 }
