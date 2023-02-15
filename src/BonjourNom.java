@@ -16,18 +16,24 @@ public class BonjourNom {
         if(listeDenoms == null||listeDenoms.isEmpty()){
             return "Bonjour, ami";
         }
+        int i = 1;
         for(String nom : listeDenoms) {
-
-            if (nom != null && !nom.equals("")) {
-                res = nom;
-            } else {
-                res += "ami";
+            if(i>1 && i+1<listeDenoms.size()){
+                res+=",";
+            }else if(i>1 && i == listeDenoms.size()){
+                res+=" et ";
             }
-            if()
+            if (nom != null && !nom.equals("")) {
+                res += nom;
+            }else{
+                res +="ami";
+            }
 
-            if (!isUppercase(nom)) {
+
+            if (!isUppercase(nom) || nom.equals(null) || nom.equals("")) {
                 isFullUpercase=false;
             }
+            i++;
         }
 
         if(isFullUpercase==true){
