@@ -1,7 +1,16 @@
 public class BonjourNom {
 
     public static String bonjourNom(String nom){
-        return "Bonjour "+nom;
+        String res = "";
+        if(nom!=null){
+            res=nom;
+        }else{
+            res="ami";
+        }
+
+        return "Bonjour, "+res;
+
+
     }
 
 }
