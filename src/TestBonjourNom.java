@@ -10,11 +10,6 @@ public class TestBonjourNom {
 
     private ArrayList<String> listeDenoms = new ArrayList<>();
 
-    @Before
-    public void setUp(){
-
-    }
-
     @Test
     public void bonjourNomNom(){
         listeDenoms.add("Ju");
@@ -66,6 +61,15 @@ public class TestBonjourNom {
         listeDenoms.add("MAM");
         listeDenoms.add("AMA");
         assertEquals("BONJOUR, MAM et AMA", BonjourNom.bonjourNom(listeDenoms));
+    }
+
+    @Test
+    public void bonjourMaj(){
+        listeDenoms.add("MAM");
+        listeDenoms.add("AMA");
+        listeDenoms.add("mam");
+        listeDenoms.add("ama");
+        assertEquals("Bonjour, mam et ama BONJOUR, AMA et MAM", BonjourNom.bonjourNom(listeDenoms));
     }
 
 
