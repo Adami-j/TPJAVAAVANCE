@@ -49,7 +49,7 @@ public class TestBonjourNom {
     public void bonjourPlusieursNoms(){
         listeDenoms.add("Tic");
         listeDenoms.add("Tac");
-        assertEquals("Bonjour, Tic et Tac", BonjourNom.bonjourNom(new ArrayList<String>()));
+        assertEquals("Bonjour, Tic et Tac", BonjourNom.bonjourNom(listeDenoms));
     }
 
 }
