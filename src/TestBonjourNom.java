@@ -20,6 +20,10 @@ public class TestBonjourNom {
         assertEquals("Bonjour, ami",BonjourNom.bonjourNom(""));
     }
 
+    @Test
+    public void bonjourHurler(){
+        assertEquals("BONJOUR, NOUPY",BonjourNom.bonjourNom("NOUPY"));
+    }
 
 
 }
