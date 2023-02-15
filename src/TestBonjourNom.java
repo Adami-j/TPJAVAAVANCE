@@ -15,5 +15,11 @@ public class TestBonjourNom {
         assertEquals("Bonjour, ami",BonjourNom.bonjourNom(null));
     }
 
+    @Test
+    public void bonjourVide(){
+        assertEquals("Bonjour, ami",BonjourNom.bonjourNom(""));
+    }
+
+
 
 }
