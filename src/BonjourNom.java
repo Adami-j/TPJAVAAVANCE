@@ -16,6 +16,17 @@ public class BonjourNom {
         if(listeDenoms == null||listeDenoms.isEmpty()){
             return "Bonjour, ami";
         }
+
+        ArrayList<String> listeMinuscule = new ArrayList<>();
+        ArrayList<String> listeMajuscule = new ArrayList<>();
+        for(String nom : listeDenoms) {
+            if(isUppercase(nom)){
+                listeMajuscule.add(nom);
+            }else {
+                listeMinuscule.add(nom);
+            }
+        }
+
         int i = 1;
         for(String nom : listeDenoms) {
             if(i>1 && i<listeDenoms.size()){
