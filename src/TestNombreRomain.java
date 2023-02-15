@@ -18,5 +18,14 @@ public class TestNombreRomain {
     public void nombreRomainEgalTrois(){
         assertEquals("III",NombreRomain.splitNombreRomain(3));
     }
+    @Test
+    public void nombreRomainEgalQuatre(){
+        assertEquals("IIII",NombreRomain.splitNombreRomain(4));
+    }
+
+    @Test
+    public void nombreRomainEgalCinq() {
+        assertEquals("V", NombreRomain.splitNombreRomain(5));
+    }
 
 }
