@@ -6,10 +6,18 @@ public class NombreRomain {
             return "";
         }
 
-        while(y<=i){
-            res+="I";
-            y++;
+
+
+        if(i%5==0){
+            res+="V";
+        }else{
+            while(y<=i){
+                res+="I";
+                y++;
+            }
         }
+
+
         return res;
     }
 
