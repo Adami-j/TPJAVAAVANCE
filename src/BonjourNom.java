@@ -18,8 +18,8 @@ public class BonjourNom {
         }
         int i = 1;
         for(String nom : listeDenoms) {
-            if(i>1 && i+1<listeDenoms.size()){
-                res+=",";
+            if(i>1 && i<listeDenoms.size()){
+                res+=", ";
             }else if(i>1 && i == listeDenoms.size()){
                 res+=" et ";
             }
