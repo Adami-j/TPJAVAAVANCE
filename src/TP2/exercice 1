@@ -1,0 +1,21 @@
+1. Donnée des membres de l’équipe de France de Football.
+Liste  Ensemble et MAP
+
+2. Donnée des membres de l’équipe de France de Football avec leurs rôles respectifs dans l’équipe.
+MAP<map>
+
+3. Marqueurs de buts lors du dernier match (en se rappelant la séquence).
+Liste
+
+4. Affectation des étudiants à un groupe de projet.
+MAP<set>
+
+5. Pour chaque groupe de projet, la “liste” des étudiants.
+map<integer,liste>
+
+6. Pour chaque groupe de projet, affectation du sujet.
+map<Ineger,string>
+
+
+7. Étudiants présents lors de chaque séance de Java du semestre.
+map<> ou ensemble
