@@ -1,3 +1,5 @@
+package TP1;
+
 import org.junit.Test;
 
 import static  org.junit.Assert.assertEquals;
@@ -36,7 +38,7 @@ public class TestFizzBuzz {
 
     @Test
     public void testFizzBuzzMultiple3et5(){
-        assertEquals("FizzBuzz",FizzBuzz.fizzBuzz(15));
+        assertEquals("contrat.FizzBuzz",FizzBuzz.fizzBuzz(15));
     }
 
 

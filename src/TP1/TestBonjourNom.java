@@ -1,4 +1,5 @@
-import org.junit.Before;
+package TP1;
+
 import org.junit.Test;
 
 import java.util.ArrayList;

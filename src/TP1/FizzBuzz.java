@@ -1,16 +1,18 @@
+package TP1;
+
 public class FizzBuzz {
 
     /**
-     * Calcule le FizzBuzz de i
+     * Calcule le contrat.FizzBuzz de i
      * @param i nombre en paramètre
-     * @return FizzBuzz de i
+     * @return contrat.FizzBuzz de i
      * @author Julien ADAMI
      */
     public static String fizzBuzz(int i) {
 
         String res="";
         if(i%3==0 && i%5==0){
-            res= "FizzBuzz";
+            res= "contrat.FizzBuzz";
         }else if(i%3==0) {
             res = "Fizz";
         }else if(i%5==0){
