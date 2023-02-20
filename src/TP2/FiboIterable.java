@@ -4,6 +4,7 @@ import java.util.Iterator;
 import java.util.Spliterator;
 
 public class FiboIterable implements Iterable<Integer> {
+
     private int i;
 
     public FiboIterable(int i) {
@@ -20,5 +21,6 @@ public class FiboIterable implements Iterable<Integer> {
         for (int i : fibo) {
             System.out.print(i + " ");
         }
+      
     }
 }

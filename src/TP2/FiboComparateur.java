@@ -6,7 +6,7 @@ public class FiboComparateur implements Iterator<Integer> {
 
     private int fin = 1;
     private int i = 0;
-    private int debut = i;
+    private int debut = 0;
 
     public FiboComparateur(int i) {
         this.i = i;
@@ -15,9 +15,7 @@ public class FiboComparateur implements Iterator<Integer> {
 
     @Override
     public boolean hasNext() {
-        if(fin==1 && debut==1){
-            return true;
-        }
+
         return debut+fin<=i?true:false;
     }
 
